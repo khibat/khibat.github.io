@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>txt</title>
+</head>
+<body>
+  <div id="main">
+    <span>Content of #main div goes here</span>
+  </div>
+  <a href="#" id="downloadLink">Download the inner html of #main</a>
+ 
+<script type="text/javascript" src="https://unpkg.com/jquery@1/dist/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function () {
+  function downloadInnerHtml(filename, elId, mimeType) {
+      var elHtml = document.getElementById(elId).innerHTML;
+      var link = document.createElement('a');
+      mimeType = mimeType || 'text/plain';
+ 
+      link.setAttribute('download', filename);
+      link.setAttribute('href', 'data:' + mimeType + ';charset=utf-8,' + encodeURIComponent(elHtml));
+      link.click(); 
+  }
+ 
+  var fileName =  'tags.html'; // You can use the .txt extension if you want
+ 
+  $('#downloadLink').click(function(){
+      downloadInnerHtml(fileName, 'main','text/html');
+  });
+});
+</script>
+</body>
+</html>
