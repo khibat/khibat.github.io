@@ -78,6 +78,8 @@ html {
 /*___________________________________*/
 
 /*.btn {
+    display: block;
+    margin-top: 5px;
     color: #fff;
     border: 1px solid 0; 
     border-radius: 50px;
