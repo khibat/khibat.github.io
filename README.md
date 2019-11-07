@@ -8,4 +8,4 @@ The my first Web-site
 
 [Личный сайт](https://khibat.github.io/page "Сайт Салавата Хибатова")
 
-[Тест Профориентационный](https://khibat.github.io/test "Тест")
+[Тест Профориентационный](https://khibat.github.io/bspu "Тест")
